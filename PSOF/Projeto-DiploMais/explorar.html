@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="explorar_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Racing+Sans+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>DiploMais - explorar</title>
+</head>
+<body>
+    <header>
+        <img src="img/Mascote polvo.png" alt="Mascote Polvo" class="polvo">
+
+        <h1>
+            <span class="Diplo">DIPLO</span><span class="Mais">MAIS</span>
+        </h1>
+        <p>Sua plataforma de cursos online</p>
+        <nav>
+            <a href="inicio.html">INICIO</a>
+            <a href="explorar.html" class="pagina_atual">EXPLORAR</a>
+            <a href="meus_cursos.html">MEUS CURSOS</a>
+            <a href="calendario.html">CALENDÁRIO</a>
+            <a href="contato.html">CONTATO</a>
+            <a href="sobre.html">SOBRE</a>
+        </nav>
+    </header>
+
+
+<main>
+
+    <section class="explorar-intro">
+        <h2>Explore nossos cursos</h2>
+
+        <p>
+            Descubra novas habilidades e encontre o curso ideal
+            para desenvolver seu conhecimento.
+        </p>
+
+        <form class="barra-pesquisa" action="explorar.html" method="get">
+            <input
+                type="search"
+                name="q"
+                placeholder="O que você deseja aprender?"
+                aria-label="Pesquisar cursos"
+            >
+
+            <button type="submit">Pesquisar</button>
+        </form>
+    </section>
+
+
+    <section class="categorias">
+        <h2>Explore por área</h2>
+
+        <div class="lista-categorias">
+
+            <a href="#tecnologia" class="categoria">
+                <span class="categoria-icone">💻</span>
+                <h3>Tecnologia</h3>
+                <p>Programação e inovação</p>
+            </a>
+
+            <a href="#logistica" class="categoria">
+                <span class="categoria-icone">📦</span>
+                <h3>Logística</h3>
+                <p>Gestão e distribuição</p>
+            </a>
+
+            <a href="#industria" class="categoria">
+                <span class="categoria-icone">⚙️</span>
+                <h3>Indústria</h3>
+                <p>Máquinas e automação</p>
+            </a>
+
+        </div>
+    </section>
+
+
+    <section class="catalogo-cursos">
+
+        <h2>Conheça nossos cursos</h2>
+
+        <p class="subtitulo-catalogo">
+            Aprenda no seu ritmo e amplie suas oportunidades.
+        </p>
+
+
+        <section class="grupo-cursos" id="tecnologia">
+            <h3 class="titulo-categoria">Tecnologia</h3>
+
+            <div class="lista-cursos">
+
+                <article class="curso-card">
+                    <img
+                        src="img/tecnologia.jpg"
+                        alt="Área de tecnologia"
+                    >
+
+                    <div class="curso-conteudo">
+                        <span class="curso-area">Tecnologia</span>
+                        <h4>Introdução à Programação</h4>
+
+                        <p>
+                            Aprenda os fundamentos da programação
+                            e desenvolva sua lógica.
+                        </p>
+
+                        <div class="curso-info">
+                            <span>Iniciante</span>
+                            <span>Online</span>
+                        </div>
+
+                        <a href="#" class="botao-curso">
+                            Ver detalhes
+                        </a>
+                    </div>
+                </article>
+
+
+                <article class="curso-card">
+                    <img
+                        src="img/tecnologia2.jpg"
+                        alt="Estudos de tecnologia"
+                    >
+
+                    <div class="curso-conteudo">
+                        <span class="curso-area">Tecnologia</span>
+                        <h4>Desenvolvimento Web</h4>
+
+                        <p>
+                            Conheça HTML e CSS e aprenda a criar
+                            suas próprias páginas web.
+                        </p>
+
+                        <div class="curso-info">
+                            <span>Iniciante</span>
+                            <span>Online</span>
+                        </div>
+
+                        <a href="#" class="botao-curso">
+                            Ver detalhes
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <section class="grupo-cursos" id="logistica">
+            <h3 class="titulo-categoria">Logística</h3>
+
+            <div class="lista-cursos">
+
+                <article class="curso-card">
+                    <img
+                        src="img/marketing.jpg"
+                        alt="Área de logística"
+                    >
+
+                    <div class="curso-conteudo">
+                        <span class="curso-area">Logística</span>
+                        <h4>Fundamentos da Logística</h4>
+
+                        <p>
+                            Entenda como funcionam o armazenamento,
+                            o transporte e a distribuição.
+                        </p>
+
+                        <div class="curso-info">
+                            <span>Iniciante</span>
+                            <span>Online</span>
+                        </div>
+
+                        <a href="#" class="botao-curso">
+                            Ver detalhes
+                        </a>
+                    </div>
+                </article>
+
+
+                <article class="curso-card">
+                    <img
+                        src="img/marketing2.jpg"
+                        alt="Planejamento e organização"
+                    >
+
+                    <div class="curso-conteudo">
+                        <span class="curso-area">Logística</span>
+                        <h4>Gestão de Estoque</h4>
+
+                        <p>
+                            Aprenda conceitos de controle de estoque
+                            e organização de materiais.
+                        </p>
+
+                        <div class="curso-info">
+                            <span>Iniciante</span>
+                            <span>Online</span>
+                        </div>
+
+                        <a href="#" class="botao-curso">
+                            Ver detalhes
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <section class="grupo-cursos" id="industria">
+            <h3 class="titulo-categoria">Indústria</h3>
+
+            <div class="lista-cursos">
+
+                <article class="curso-card">
+                    <img
+                        src="img/industria.jpg"
+                        alt="Ambiente industrial"
+                    >
+
+                    <div class="curso-conteudo">
+                        <span class="curso-area">Indústria</span>
+                        <h4>Automação Industrial</h4>
+
+                        <p>
+                            Descubra os conceitos básicos de máquinas,
+                            sensores e processos automatizados.
+                        </p>
+
+                        <div class="curso-info">
+                            <span>Iniciante</span>
+                            <span>Online</span>
+                        </div>
+
+                        <a href="#" class="botao-curso">
+                            Ver detalhes
+                        </a>
+                    </div>
+                </article>
+
+
+                <article class="curso-card">
+                    <img
+                        src="img/industria2.jpg"
+                        alt="Equipamentos industriais"
+                    >
+
+                    <div class="curso-conteudo">
+                        <span class="curso-area">Indústria</span>
+                        <h4>Segurança Industrial</h4>
+
+                        <p>
+                            Conheça princípios de prevenção de riscos
+                            e segurança no ambiente industrial.
+                        </p>
+
+                        <div class="curso-info">
+                            <span>Iniciante</span>
+                            <span>Online</span>
+                        </div>
+
+                        <a href="#" class="botao-curso">
+                            Ver detalhes
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </section>
+
+
+   
+</main>
+       
+
+    <footer>
+
+    <div class="footer-logo">
+        <h2>
+            <span class="Diplo">DIPLO</span><span class="Mais">MAIS</span>
+        </h2>
+
+        <p>Sua plataforma de cursos online</p>
+    </div>
+
+    <div class="footer-links">
+
+        <div>
+            <h3>Navegação</h3>
+
+            <a href="inicio.html">Início</a>
+            <a href="explorar.html">Explorar</a>
+            <a href="meus_cursos.html">Meus Cursos</a>
+        </div>
+
+        <div>
+            <h3>Informações</h3>
+
+            <a href="calendario.html">Calendário</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+        </div>
+
+    </div>
+
+    <div class="footer-final">
+        <p>© 2026 DiploMais. Todos os direitos reservados.</p>
+    </div>
+
+    </footer>
+    <script src="explorar.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,471 @@
+*{
+box-sizing: border-box;
+}
+html, body {
+margin: 0;
+padding: 0;
+width: 100%;
+overflow-x: hidden;
+}
+header {
+background-color: darkorange;
+padding: 5px;
+margin-top: -20px;
+position: relative;
+width: 100%;
+p {
+color: white;
+margin-top: -25px;
+font-family: "Racing Sans One", sans-serif;
+}
+}
+.polvo {
+position: absolute;
+right: -40px;
+top: -40px;
+width: 220px;
+height: 220px;
+}
+span {
+margin-bottom: 5px;
+}
+.Diplo {
+color: orangered;
+font-family: "Faster One", system-ui;
+font-weight: 400;
+font-style: normal;
+}
+.Mais {
+color: blueviolet;
+font-family: "Faster One", system-ui;
+font-weight: 400;
+font-style: normal;
+}
+nav {
+display: flex;
+gap: 18px;
+}
+nav a {
+text-decoration: none;
+font-family: "Roboto", sans-serif;
+font-size: 12px;
+color: white;
+}
+.pagina_atual {
+color: blueviolet;
+font-weight: bold;
+border-bottom: 2px solid blueviolet;
+padding-bottom: 5px;
+}
+
+*{
+box-sizing: border-box;
+}
+html {
+scroll-behavior: smooth;
+scroll-padding-top: 20px;
+}
+body {
+margin: 0;
+padding: 0;
+width: 100%;
+overflow-x: hidden;
+font-family: "Roboto", sans-serif;
+color: #292929;
+}
+main {
+width: 100%;
+}
+
+.explorar-intro {
+background-color: rgb(253, 215, 180);
+text-align: center;
+padding: 65px 20px 70px;
+}
+.explorar-intro h2 {
+margin: 0 0 15px;
+font-family: "Racing Sans One", sans-serif;
+font-size: 42px;
+font-weight: normal;
+color: orangered;
+}
+.explorar-intro p {
+max-width: 600px;
+margin: 0 auto 30px;
+font-size: 16px;
+line-height: 1.7;
+}
+
+.barra-pesquisa {
+display: flex;
+align-items: center;
+max-width: 600px;
+margin: 0 auto;
+background-color: white;
+border: 2px solid blueviolet;
+border-radius: 30px;
+padding: 5px;
+}
+.barra-pesquisa input {
+flex: 1;
+min-width: 0;
+border: none;
+outline: none;
+background: transparent;
+padding: 12px 18px;
+font-size: 14px;
+}
+.barra-pesquisa button {
+border: none;
+border-radius: 25px;
+background-color: blueviolet;
+color: white;
+padding: 12px 22px;
+font-family: "Roboto", sans-serif;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+.barra-pesquisa button:hover {
+background-color: orangered;
+}
+
+.categorias {
+padding: 55px 8%;
+text-align: center;
+}
+.categorias > h2,
+.catalogo-cursos > h2 {
+margin: 0 0 15px;
+font-family: "Racing Sans One", sans-serif;
+font-size: 32px;
+font-weight: normal;
+}
+.lista-categorias {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 25px;
+max-width: 1100px;
+margin: 35px auto 0;
+}
+.categoria {
+display: block;
+padding: 30px 20px;
+background-color: white;
+border: 1px solid #eeeeee;
+border-radius: 15px;
+color: #292929;
+text-decoration: none;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+transition:
+transform 0.3s,
+box-shadow 0.3s;
+}
+.categoria:hover {
+transform: translateY(-6px);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.categoria-icone {
+display: block;
+margin-bottom: 12px;
+font-size: 38px;
+}
+.categoria h3 {
+margin: 0 0 10px;
+color: blueviolet;
+font-size: 20px;
+}
+.categoria p {
+margin: 0;
+font-size: 14px;
+color: #666666;
+}
+
+.catalogo-cursos {
+padding: 55px 8%;
+background-color: #f7f7f7;
+}
+.catalogo-cursos > h2,
+.subtitulo-catalogo {
+text-align: center;
+}
+.subtitulo-catalogo {
+margin: 0 0 45px;
+color: #666666;
+line-height: 1.6;
+}
+.grupo-cursos {
+max-width: 1200px;
+margin: 0 auto 55px;
+scroll-margin-top: 25px;
+}
+.grupo-cursos:last-child {
+margin-bottom: 0;
+}
+.titulo-categoria {
+margin: 0 0 25px;
+padding-left: 15px;
+border-left: 5px solid darkorange;
+color: blueviolet;
+font-size: 24px;
+}
+.lista-cursos {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 25px;
+}
+
+.curso-card {
+display: flex;
+flex-direction: column;
+min-width: 0;
+overflow: hidden;
+background-color: white;
+border-radius: 15px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+transition:
+transform 0.3s,
+box-shadow 0.3s;
+}
+.curso-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.13);
+}
+.curso-card > img {
+display: block;
+width: 100%;
+height: 190px;
+object-fit: cover;
+}
+.curso-conteudo {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+flex: 1;
+padding: 22px;
+}
+.curso-area {
+display: inline-block;
+margin-bottom: 12px;
+padding: 6px 12px;
+border-radius: 20px;
+background-color: #f0e3ff;
+color: blueviolet;
+font-size: 12px;
+font-weight: bold;
+}
+.curso-conteudo h4 {
+margin: 0 0 12px;
+font-size: 19px;
+}
+.curso-conteudo > p {
+margin: 0 0 20px;
+color: #666666;
+font-size: 14px;
+line-height: 1.6;
+}
+.curso-info {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+margin-top: auto;
+margin-bottom: 20px;
+color: #666666;
+font-size: 12px;
+}
+.curso-info span {
+padding: 6px 10px;
+background-color: #f2f2f2;
+border-radius: 5px;
+}
+
+.botao-curso {
+display: block;
+width: 100%;
+padding: 12px;
+border-radius: 8px;
+background-color: blueviolet;
+color: white;
+text-align: center;
+text-decoration: none;
+font-weight: bold;
+font-size: 14px;
+transition: background-color 0.3s;
+}
+.botao-curso:hover {
+background-color: orangered;
+}
+
+.convite-cursos {
+padding: 55px 20px;
+background-color: rgb(253, 215, 180);
+text-align: center;
+}
+.convite-cursos h2 {
+margin: 0 0 15px;
+color: orangered;
+font-family: "Racing Sans One", sans-serif;
+font-size: 30px;
+font-weight: normal;
+}
+.convite-cursos p {
+max-width: 600px;
+margin: 0 auto 25px;
+line-height: 1.7;
+}
+.botao-convite {
+display: inline-block;
+padding: 13px 25px;
+border-radius: 25px;
+background-color: blueviolet;
+color: white;
+text-decoration: none;
+font-weight: bold;
+transition: background-color 0.3s;
+}
+.botao-convite:hover {
+background-color: orangered;
+}
+
+.voltar-topo {
+position: fixed;
+right: 20px;
+bottom: 20px;
+z-index: 10;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 45px;
+height: 45px;
+border-radius: 50%;
+background-color: blueviolet;
+color: white;
+font-size: 25px;
+text-decoration: none;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.voltar-topo:hover {
+background-color: orangered;
+}
+
+@media (max-width: 1000px) {
+.lista-cursos {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.categorias,
+.catalogo-cursos {
+padding-left: 5%;
+padding-right: 5%;
+}
+}
+@media (max-width: 650px) {
+.explorar-intro {
+padding: 45px 20px;
+}
+.explorar-intro h2 {
+font-size: 32px;
+}
+.lista-categorias {
+grid-template-columns: 1fr;
+gap: 15px;
+}
+.lista-cursos {
+grid-template-columns: 1fr;
+}
+.categorias,
+.catalogo-cursos {
+padding: 40px 20px;
+}
+.barra-pesquisa {
+border-radius: 15px;
+}
+.barra-pesquisa input {
+padding: 10px;
+font-size: 12px;
+}
+.barra-pesquisa button {
+padding: 11px 14px;
+font-size: 12px;
+}
+.convite-cursos h2 {
+font-size: 25px;
+}
+footer {
+padding: 35px 20px 20px;
+}
+.footer-links {
+gap: 50px;
+flex-wrap: wrap;
+}
+}
+footer {
+background-color: #252525;
+color: white;
+padding: 40px 80px 20px;
+font-family: "Roboto", sans-serif;
+}
+
+.footer-logo {
+text-align: center;
+}
+.footer-logo h2 {
+margin: 0;
+font-size: 35px;
+}
+.footer-logo p {
+margin-top: 5px;
+font-size: 14px;
+}
+
+.footer-links {
+display: flex;
+justify-content: center;
+gap: 120px;
+margin-top: 30px;
+}
+.footer-links div {
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+.footer-links h3 {
+margin: 0 0 8px;
+font-size: 16px;
+}
+.footer-links a {
+color: white;
+text-decoration: none;
+font-size: 13px;
+}
+.footer-links a:hover {
+color: blueviolet;
+}
+
+.footer-final {
+border-top: 1px solid #555;
+margin-top: 30px;
+padding-top: 15px;
+text-align: center;
+}
+.footer-final p {
+margin: 0;
+font-size: 12px;
+}
+
+/* ADAPTAÇÃO PARA TELAS MENORES /
+@media (max-width: 800px) {
+.lista-cursos {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+}
+@media (max-width: 550px) {
+.lista-cursos {
+grid-template-columns: 1fr;
+}
+.explorar-intro h2 {
+font-size: 28px;
+}
+.catalogo-cursos {
+padding: 35px 20px;
+}
+}
