@@ -1,0 +1,532 @@
+HTML:
+
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="contato_style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Racing+Sans+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>DiploMais - contato</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <img src="img/Mascote polvo.png" alt="Mascote Polvo" class="polvo">
+
+
+
+        <h1>
+
+            <span class="Diplo">DIPLO</span><span class="Mais">MAIS</span>
+
+        </h1>
+
+        <p>Sua plataforma de cursos online</p>
+
+        <nav>
+
+            <a href="inicio.html">INICIO</a>
+
+            <a href="explorar.html">EXPLORAR</a>
+
+            <a href="meus_cursos.html">MEUS CURSOS</a>
+
+            <a href="calendario.html">CALENDÁRIO</a>
+
+            <a href="contato.html" class="pagina_atual">CONTATO</a>
+
+            <a href="sobre.html">SOBRE</a>
+
+        </nav>
+
+    </header>
+
+
+
+<main class="pagina-contato">
+
+
+
+
+
+    <section class="area-contato">
+
+
+
+   
+
+        <form class="form-contato" action="#" method="post"
+
+              enctype="multipart/form-data">
+
+
+
+            <h2>Enviar uma mensagem</h2>
+
+
+
+            <div class="campo">
+
+                <label for="nome">Nome:</label>
+
+                <input
+
+                    type="text"
+
+                    id="nome"
+
+                    name="nome"
+
+                    placeholder="Digite seu nome"
+
+                    required
+
+                >
+
+            </div>
+
+
+
+            <div class="campo">
+
+                <label for="email">E-mail:</label>
+
+                <input
+
+                    type="email"
+
+                    id="email"
+
+                    name="email"
+
+                    placeholder="seuemail@exemplo.com"
+
+                    required
+
+                >
+
+            </div>
+
+
+
+            <div class="campo">
+
+                <label for="assunto">Assunto:</label>
+
+
+
+                <select id="assunto" name="assunto" required>
+
+                    <option value="" selected disabled>
+
+                        Selecione o assunto
+
+                    </option>
+
+                    <option value="cursos">Dúvidas sobre cursos</option>
+
+                    <option value="certificado">Certificados</option>
+
+                    <option value="pagamento">Pagamentos</option>
+
+                    <option value="problema">Problemas na plataforma</option>
+
+                    <option value="outro">Outro assunto</option>
+
+                </select>
+
+            </div>
+
+
+
+            <div class="campo">
+
+                <label for="mensagem">Mensagem:</label>
+
+                <textarea
+
+                    id="mensagem"
+
+                    name="mensagem"
+
+                    rows="4"
+
+                    placeholder="Escreva sua mensagem..."
+
+                    required
+
+                ></textarea>
+
+            </div>
+
+
+
+            <div class="campo campo-anexo">
+
+                <label for="anexo" class="botao-anexo">
+
+                    <span aria-hidden="true">📎</span>
+
+                    Anexar arquivo
+
+                </label>
+
+
+
+                <input
+
+                    type="file"
+
+                    id="anexo"
+
+                    name="anexo"
+
+                    accept="image/*,.pdf"
+
+                >
+
+
+
+                <span id="nome-arquivo" class="nome-arquivo">
+
+                    Nenhum arquivo selecionado
+
+                </span>
+
+            </div>
+
+
+
+            <button type="submit" class="botao-enviar">
+
+                Enviar Mensagem
+
+            </button>
+
+
+
+        </form>
+
+
+
+
+
+   
+
+        <aside class="meios-contato">
+
+
+
+            <h2>Meios de Contato</h2>
+
+
+
+            <article class="contato-item">
+
+                <span class="icone-contato" aria-hidden="true">🗪</span>
+
+
+
+                <div class="contato-texto">
+
+                    <h3>WhatsApp</h3>
+
+                    <p>Resposta em poucos minutos</p>
+
+
+
+                    <a
+
+                        href="https://wa.me/"
+
+                        target="_blank"
+
+                        rel="noopener noreferrer"
+
+                        class="link-contato"
+
+                    >
+
+                        Abrir conversa
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="contato-item">
+
+                <span class="icone-contato" aria-hidden="true">✉</span>
+
+
+
+                <div class="contato-texto">
+
+                    <h3>E-mail</h3>
+
+
+
+                    <a href="mailto:suporte@diplomais.com.br">
+
+                        suporte@diplomais.com.br
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="contato-item">
+
+                <span class="icone-contato" aria-hidden="true">◷</span>
+
+
+
+                <div class="contato-texto">
+
+                    <h3>Horário de atendimento</h3>
+
+                    <p>7h30 às 21h</p>
+
+                </div>
+
+            </article>
+
+
+
+        </aside>
+
+
+
+    </section>
+
+
+
+
+
+    <section class="area-faq">
+
+
+
+        <div class="titulo-faq">
+
+            <h2>Perguntas<br>Frequentes:</h2>
+
+        </div>
+
+
+
+        <div class="lista-faq">
+
+
+
+            <details class="item-faq">
+
+                <summary>
+
+                    Como faço para emitir meu certificado após concluir o curso?
+
+                </summary>
+
+
+
+                <p>
+
+                    Após concluir todas as atividades obrigatórias,
+
+                    acesse a área de seus cursos e procure a opção
+
+                    de certificado, quando disponível.
+
+                </p>
+
+            </details>
+
+
+
+            <details class="item-faq">
+
+                <summary>
+
+                    Posso trocar de curso após a inscrição?
+
+                </summary>
+
+
+
+                <p>
+
+                    A possibilidade de troca depende das regras do curso.
+
+                    Entre em contato com o suporte para receber orientações.
+
+                </p>
+
+            </details>
+
+
+
+            <details class="item-faq" open>
+
+                <summary>
+
+                    Qual o prazo para correção das atividades e trabalhos?
+
+                </summary>
+
+
+
+                <p>
+
+                    O prazo padrão dos tutores é de até 3 dias úteis após
+
+                    o envio na plataforma. Se precisar de urgência, entre
+
+                    em contato via WhatsApp.
+
+                </p>
+
+            </details>
+
+
+
+            <details class="item-faq">
+
+                <summary>
+
+                    Como solicitar o reembolso ou cancelamento?
+
+                </summary>
+
+
+
+                <p>
+
+                    Envie uma mensagem ao suporte informando o curso e
+
+                    o motivo da solicitação. A equipe poderá orientar
+
+                    você sobre os procedimentos aplicáveis.
+
+                </p>
+
+            </details>
+
+
+
+            <a href="contato.html" class="botao-faq">
+
+                Ver todas as perguntas na central de ajuda »
+
+            </a>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+</main>
+
+
+
+
+
+    <footer>
+
+
+
+    <div class="footer-logo">
+
+        <h2>
+
+            <span class="Diplo">DIPLO</span><span class="Mais">MAIS</span>
+
+        </h2>
+
+
+
+        <p>Sua plataforma de cursos online</p>
+
+    </div>
+
+
+
+    <div class="footer-links">
+
+
+
+        <div>
+
+            <h3>Navegação</h3>
+
+
+
+            <a href="inicio.html">Início</a>
+
+            <a href="explorar.html">Explorar</a>
+
+            <a href="meus_cursos.html">Meus Cursos</a>
+
+        </div>
+
+
+
+        <div>
+
+            <h3>Informações</h3>
+
+
+
+            <a href="calendario.html">Calendário</a>
+
+            <a href="contato.html">Contato</a>
+
+            <a href="sobre.html">Sobre</a>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="footer-final">
+
+        <p>© 2026 DiploMais. Todos os direitos reservados.</p>
+
+    </div>
+
+
+
+    </footer>
+    <script src="contato.js"></script>
+</body>
+
+</html>
+

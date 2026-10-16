@@ -1,0 +1,259 @@
+HTML:
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="calendario_style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Racing+Sans+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<title>DiploMais - calendario</title>
+</head>
+<body>
+<header>
+<img src="img/Mascote polvo.png" alt="Mascote Polvo" class="polvo">
+<h1>
+<span class="Diplo">DIPLO</span><span class="Mais">MAIS</span>
+</h1>
+<p>Sua plataforma de cursos online</p>
+<nav>
+<a href="inicio.html">INICIO</a>
+<a href="explorar.html">EXPLORAR</a>
+<a href="meus_cursos.html">MEUS CURSOS</a>
+<a href="calendario.html" class="pagina_atual">CALENDÁRIO</a>
+<a href="contato.html">CONTATO</a>
+<a href="sobre.html">SOBRE</a>
+</nav>
+</header>
+
+<main class="pagina-calendario">
+
+<section class="calendario-principal">
+<div class="cabecalho-calendario">
+<h2>Calendário do Aluno</h2>
+<div class="navegacao-mes">
+<button type="button" aria-label="Mês anterior">&#10094;</button>
+<span>Outubro <small>2026</small></span>
+<button type="button" aria-label="Próximo mês">&#10095;</button>
+</div>
+<button class="botao-evento" type="button">
+Adicionar evento
+</button>
+</div>
+<div class="grade-calendario">
+<div class="dia-semana">Dom</div>
+<div class="dia-semana">Seg</div>
+<div class="dia-semana">Ter</div>
+<div class="dia-semana">Qua</div>
+<div class="dia-semana">Qui</div>
+<div class="dia-semana">Sex</div>
+<div class="dia-semana">Sáb</div>
+<div class="dia vazio"></div>
+<div class="dia vazio"></div>
+<div class="dia vazio"></div>
+<div class="dia vazio"></div>
+<div class="dia">
+<span class="numero-dia">1</span>
+</div>
+<div class="dia">
+<span class="numero-dia">2</span>
+</div>
+<div class="dia">
+<span class="numero-dia">3</span>
+</div>
+<div class="dia">
+<span class="numero-dia">4</span>
+</div>
+<div class="dia">
+<span class="numero-dia">5</span>
+</div>
+<div class="dia">
+<span class="numero-dia">6</span>
+</div>
+<div class="dia">
+<span class="numero-dia">7</span>
+</div>
+<div class="dia">
+<span class="numero-dia">8</span>
+</div>
+<div class="dia">
+<span class="numero-dia">9</span>
+</div>
+<div class="dia">
+<span class="numero-dia">10</span>
+</div>
+<div class="dia">
+<span class="numero-dia">11</span>
+</div>
+
+<div class="dia tem-evento">
+<span class="numero-dia">12</span>
+<span class="etiqueta-evento">
+Entrega de trabalho
+</span>
+<div class="detalhes-evento">
+<strong>dia 12 - Entrega de trabalho</strong>
+<p>Entrega do trabalho do curso de JavaScript.</p>
+</div>
+</div>
+<div class="dia">
+<span class="numero-dia">13</span>
+</div>
+<div class="dia">
+<span class="numero-dia">14</span>
+</div>
+<div class="dia">
+<span class="numero-dia">15</span>
+</div>
+<div class="dia">
+<span class="numero-dia">16</span>
+</div>
+
+<div class="dia tem-evento">
+<span class="numero-dia">17</span>
+<span class="etiqueta-evento">Prova</span>
+<div class="detalhes-evento">
+<strong>dia 17 - Prova</strong>
+<p>Atividade avaliativa do curso de HTML.</p>
+</div>
+</div>
+<div class="dia">
+<span class="numero-dia">18</span>
+</div>
+<div class="dia">
+<span class="numero-dia">19</span>
+</div>
+<div class="dia">
+<span class="numero-dia">20</span>
+</div>
+<div class="dia">
+<span class="numero-dia">21</span>
+</div>
+<div class="dia">
+<span class="numero-dia">22</span>
+</div>
+<div class="dia">
+<span class="numero-dia">23</span>
+</div>
+<div class="dia">
+<span class="numero-dia">24</span>
+</div>
+<div class="dia">
+<span class="numero-dia">25</span>
+</div>
+<div class="dia">
+<span class="numero-dia">26</span>
+</div>
+<div class="dia">
+<span class="numero-dia">27</span>
+</div>
+<div class="dia">
+<span class="numero-dia">28</span>
+</div>
+<div class="dia">
+<span class="numero-dia">29</span>
+</div>
+
+<div class="dia tem-evento">
+<span class="numero-dia">30</span>
+<span class="etiqueta-evento">Aulão Online</span>
+<div class="detalhes-evento">
+<strong>dia 30 - Aulão Online</strong>
+<p>Aula de revisão do curso de JavaScript.</p>
+</div>
+</div>
+<div class="dia">
+<span class="numero-dia">31</span>
+</div>
+</div>
+</section>
+
+<section class="painel-aluno">
+<div class="coluna-esquerda">
+<section class="caixa-painel desempenho">
+<h3>Desempenho Mensal</h3>
+<div class="indicadores">
+<div class="indicador">
+<strong>18h</strong>
+<span>Horas de<br>Estudo</span>
+</div>
+<div class="indicador">
+<strong>06</strong>
+<span>Aulas<br>Assistidas</span>
+</div>
+<div class="indicador">
+<strong>95%</strong>
+<span>Frequência</span>
+</div>
+</div>
+</section>
+
+<section class="caixa-painel objetivo">
+<h3>Objetivo do Dia</h3>
+<p><strong>Conteúdo Atual:</strong> JavaScript Intermediário</p>
+<p><strong>Próxima Aula:</strong> Estruturas de Repetição</p>
+<p><strong>Duração Estimada:</strong> 50min</p>
+<a href="meus_cursos.html" class="botao-continuar">
+▶ Continuar de onde parei
+</a>
+</section>
+
+<section class="caixa-painel avisos">
+<h3>Avisos da Turma</h3>
+<ul>
+<li>Prof. Carlos colocou novo material de estudo.</li>
+<li>A aula do dia 27 teve horário alterado para às 20h.</li>
+</ul>
+<a href="meus_cursos.html" class="botao-avisos">
+Ver todos os avisos
+</a>
+</section>
+</div>
+
+<aside class="proximos-eventos">
+<h3>Eventos próximos:</h3>
+<article class="evento-lista">
+<strong>dia 12 - Entrega de trabalho</strong>
+<p>Entrega do trabalho do curso de JavaScript.</p>
+</article>
+<article class="evento-lista">
+<strong>dia 17 - Prova</strong>
+<p>Atividade avaliativa do curso de HTML e CSS.</p>
+</article>
+<article class="evento-lista">
+<strong>dia 30 - Aulão Online</strong>
+<p>Aula de revisão - Curso de JavaScript.</p>
+</article>
+</aside>
+</section>
+</main>
+
+<footer>
+<div class="footer-logo">
+<h2>
+<span class="Diplo">DIPLO</span><span class="Mais">MAIS</span>
+</h2>
+<p>Sua plataforma de cursos online</p>
+</div>
+<div class="footer-links">
+<div>
+<h3>Navegação</h3>
+<a href="inicio.html">Início</a>
+<a href="explorar.html">Explorar</a>
+<a href="meus_cursos.html">Meus Cursos</a>
+</div>
+<div>
+<h3>Informações</h3>
+<a href="calendario.html">Calendário</a>
+<a href="contato.html">Contato</a>
+<a href="sobre.html">Sobre</a>
+</div>
+</div>
+<div class="footer-final">
+<p>© 2026 DiploMais. Todos os direitos reservados.</p>
+</div>
+</footer>
+<script src="calendario.js"></script>
+</body>
+</html>

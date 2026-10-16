@@ -1,0 +1,866 @@
+*{
+box-sizing: border-box;
+}
+html, body {
+
+margin: 0;
+
+padding: 0;
+
+width: 100%;
+
+overflow-x: hidden;
+
+}
+
+header {
+
+background-color: darkorange;
+
+padding: 5px;
+
+margin-top: -20px;
+
+position: relative;
+
+width: 100%;
+
+p {
+
+color: white;
+
+margin-top: -25px;
+
+font-family: "Racing Sans One", sans-serif;
+
+}
+
+}
+
+.polvo {
+
+position: absolute;
+
+right: -40px;
+
+top: -40px;
+
+width: 220px;
+
+height: 220px;
+
+}
+
+span {
+
+margin-bottom: 5px;
+
+}
+
+.Diplo {
+
+color: orangered;
+
+font-family: "Faster One", system-ui;
+
+font-weight: 400;
+
+font-style: normal;
+
+}
+
+.Mais {
+
+color: blueviolet;
+
+font-family: "Faster One", system-ui;
+
+font-weight: 400;
+
+font-style: normal;
+
+}
+
+nav {
+
+display: flex;
+
+gap: 18px;
+
+}
+
+nav a {
+
+text-decoration: none;
+
+font-family: "Roboto", sans-serif;
+
+font-size: 12px;
+
+color: white;
+
+}
+
+.pagina_atual {
+
+color: blueviolet;
+
+font-weight: bold;
+
+border-bottom: 2px solid blueviolet;
+
+padding-bottom: 5px;
+
+}
+
+
+
+.pagina-contato {
+
+font-family: "Roboto", sans-serif;
+
+color: #222222;
+
+background-color: rgb(253, 215, 180);
+
+}
+
+
+
+.area-contato {
+
+display: grid;
+
+grid-template-columns: 1fr 1fr;
+
+align-items: center;
+
+gap: 9%;
+
+padding: 50px 5%;
+
+min-height: 415px;
+
+}
+
+
+
+.form-contato {
+
+width: 100%;
+
+max-width: 480px;
+
+justify-self: center;
+
+padding: 20px 24px;
+
+background-color: orangered;
+
+}
+
+.form-contato h2 {
+
+margin: 0 0 18px;
+
+font-size: 20px;
+
+font-weight: 600;
+
+}
+
+.campo {
+
+display: flex;
+
+flex-direction: column;
+
+gap: 7px;
+
+margin-bottom: 18px;
+
+}
+
+.campo label {
+
+padding-left: 3px;
+
+font-size: 14px;
+
+}
+
+.campo input,
+
+.campo select,
+
+.campo textarea {
+
+width: 100%;
+
+min-width: 0;
+
+border: none;
+
+outline: none;
+
+background-color: white;
+
+color: #292929;
+
+padding: 10px;
+
+font-family: "Roboto", sans-serif;
+
+font-size: 13px;
+
+}
+
+.campo input,
+
+.campo select {
+
+min-height: 38px;
+
+}
+
+.campo select {
+
+border-radius: 12px;
+
+cursor: pointer;
+
+}
+
+.campo textarea {
+
+min-height: 100px;
+
+resize: vertical;
+
+}
+
+.campo input:focus,
+
+.campo select:focus,
+
+.campo textarea:focus {
+
+outline: 2px solid blueviolet;
+
+outline-offset: 1px;
+
+}
+
+
+
+.campo-anexo {
+
+margin-top: 5px;
+
+margin-bottom: 15px;
+
+}
+
+.campo-anexo input[type="file"] {
+
+position: absolute;
+
+width: 1px;
+
+height: 1px;
+
+padding: 0;
+
+overflow: hidden;
+
+clip-path: inset(50%);
+
+white-space: nowrap;
+
+}
+
+.botao-anexo {
+
+display: inline-flex;
+
+align-items: center;
+
+gap: 7px;
+
+width: fit-content;
+
+padding: 9px 13px;
+
+border-radius: 20px;
+
+background-color: #f5f5f5;
+
+font-size: 12px !important;
+
+cursor: pointer;
+
+transition: background-color 0.3s;
+
+}
+
+.botao-anexo:hover {
+
+background-color: #c9b1e8;
+
+}
+
+.campo-anexo input[type="file"]:focus-visible + .nome-arquivo {
+
+outline: 2px solid blueviolet;
+
+}
+
+.nome-arquivo {
+
+font-size: 11px;
+
+color: #555555;
+
+}
+
+
+
+.botao-enviar {
+
+display: block;
+
+width: 75%;
+
+margin: 0 auto;
+
+padding: 12px;
+
+border: none;
+
+border-radius: 20px;
+
+background-color: #f5f5f5;
+
+color: #222222;
+
+font-family: "Roboto", sans-serif;
+
+font-size: 13px;
+
+font-weight: 600;
+
+cursor: pointer;
+
+transition:
+
+background-color 0.3s,
+
+color 0.3s;
+
+}
+
+.botao-enviar:hover {
+
+background-color: blueviolet;
+
+color: white;
+
+}
+
+
+
+.meios-contato {
+
+width: 100%;
+
+max-width: 430px;
+
+justify-self: center;
+
+padding: 22px;
+
+background-color: orangered;
+
+}
+
+.meios-contato > h2 {
+
+margin: 0 0 25px;
+
+text-align: center;
+
+font-size: 19px;
+
+font-weight: 500;
+
+}
+
+.contato-item {
+
+display: flex;
+
+align-items: center;
+
+gap: 15px;
+
+margin-bottom: 20px;
+
+padding: 15px;
+
+background-color: rgb(253, 215, 180);
+
+}
+
+.contato-item:last-child {
+
+margin-bottom: 0;
+
+}
+
+.icone-contato {
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+flex-shrink: 0;
+
+width: 28px;
+
+height: 28px;
+
+font-size: 24px;
+
+color: #222222;
+
+}
+
+.contato-texto {
+
+flex: 1;
+
+min-width: 0;
+
+}
+
+.contato-texto h3 {
+
+margin: 0 0 4px;
+
+font-size: 14px;
+
+font-weight: 500;
+
+}
+
+.contato-texto p,
+
+.contato-texto a {
+
+margin: 0;
+
+font-size: 12px;
+
+line-height: 1.5;
+
+}
+
+.contato-texto a {
+
+color: #ffffff;
+
+overflow-wrap: anywhere;
+
+}
+
+.link-contato {
+
+display: block;
+
+width: fit-content;
+
+margin: 6px 0 0 auto;
+
+padding: 5px 10px;
+
+background-color: orangered;
+
+text-decoration: none;
+
+border-radius: 3px;
+
+}
+
+.link-contato:hover {
+
+background-color: #c9b1e8;
+
+}
+
+
+
+.area-faq {
+
+display: grid;
+
+grid-template-columns: 0.8fr 1.5fr;
+
+align-items: center;
+
+gap: 35px;
+
+padding: 35px 9%;
+
+background-color: #cf31c7;
+
+}
+
+.titulo-faq {
+
+justify-self: center;
+
+color: white;
+
+}
+
+.titulo-faq h2 {
+
+margin: 0;
+
+font-size: 29px;
+
+line-height: 1.2;
+
+font-weight: 700;
+
+}
+
+.lista-faq {
+
+width: 100%;
+
+padding: 15px;
+
+background-color: orange;
+
+}
+
+
+
+.item-faq {
+
+margin-bottom: 8px;
+
+background-color: white;
+
+}
+
+.item-faq summary {
+
+position: relative;
+
+padding: 12px 12px 12px 32px;
+
+font-size: 13px;
+
+line-height: 1.5;
+
+list-style: none;
+
+cursor: pointer;
+
+}
+
+.item-faq summary::-webkit-details-marker {
+
+display: none;
+
+}
+
+
+
+.item-faq summary::before {
+
+content: "+";
+
+position: absolute;
+
+left: 12px;
+
+top: 10px;
+
+font-size: 16px;
+
+font-weight: 500;
+
+}
+
+.item-faq[open] summary::before {
+
+content: "−";
+
+}
+
+.item-faq summary:hover {
+
+background-color: #f4eaff;
+
+}
+
+.item-faq > p {
+
+margin: 0;
+
+padding: 0 15px 15px 32px;
+
+font-size: 12px;
+
+line-height: 1.6;
+
+color: #555555;
+
+}
+
+
+
+.botao-faq {
+
+display: block;
+
+width: fit-content;
+
+max-width: 100%;
+
+margin: 12px auto 0;
+
+padding: 9px 12px;
+
+background-color: #cf31c7;
+
+color: #ffffff;
+
+text-align: center;
+
+text-decoration: none;
+
+font-size: 12px;
+
+}
+
+.botao-faq:hover {
+
+background-color: #c9b1e8;
+
+}
+
+
+
+@media (max-width: 800px) {
+
+.area-contato {
+
+grid-template-columns: 1fr;
+
+gap: 30px;
+
+padding: 35px 6%;
+
+}
+
+.form-contato,
+
+.meios-contato {
+
+max-width: 520px;
+
+}
+
+.area-faq {
+
+grid-template-columns: 1fr;
+
+gap: 25px;
+
+padding: 35px 6%;
+
+}
+
+.titulo-faq {
+
+justify-self: start;
+
+}
+
+.titulo-faq h2 br {
+
+display: none;
+
+}
+
+}
+
+@media (max-width: 500px) {
+
+.area-contato {
+
+padding: 25px 15px;
+
+}
+
+.form-contato,
+
+.meios-contato {
+
+padding: 18px;
+
+}
+
+.area-faq {
+
+padding: 30px 15px;
+
+}
+
+.lista-faq {
+
+padding: 8px;
+
+}
+
+.item-faq summary {
+
+font-size: 12px;
+
+}
+
+.titulo-faq h2 {
+
+font-size: 25px;
+
+}
+
+footer {
+
+padding: 30px 20px 20px;
+
+}
+
+.footer-links {
+
+flex-wrap: wrap;
+
+gap: 35px;
+
+}
+
+}
+
+
+
+footer {
+
+background-color: #252525;
+
+color: white;
+
+padding: 40px 80px 20px;
+
+font-family: "Roboto", sans-serif;
+
+}
+
+
+
+.footer-logo {
+
+text-align: center;
+
+}
+
+.footer-logo h2 {
+
+margin: 0;
+
+font-size: 35px;
+
+}
+
+.footer-logo p {
+
+margin-top: 5px;
+
+font-size: 14px;
+
+}
+
+
+
+.footer-links {
+
+display: flex;
+
+justify-content: center;
+
+gap: 120px;
+
+margin-top: 30px;
+
+}
+
+.footer-links div {
+
+display: flex;
+
+flex-direction: column;
+
+gap: 8px;
+
+}
+
+.footer-links h3 {
+
+margin: 0 0 8px;
+
+font-size: 16px;
+
+}
+
+.footer-links a {
+
+color: white;
+
+text-decoration: none;
+
+font-size: 13px;
+
+}
+
+.footer-links a:hover {
+
+color: blueviolet;
+
+}
+
+
+
+.footer-final {
+
+border-top: 1px solid #555;
+
+margin-top: 30px;
+
+padding-top: 15px;
+
+text-align: center;
+
+}
+
+.footer-final p {
+
+margin: 0;
+
+font-size: 12px;
+
+} 
